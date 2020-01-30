@@ -4,3 +4,13 @@
     background-color : #f1f3f5;
     color : #212529
 }
+
+.main-content {
+    display : flex;
+    padding : 200px 16px;
+    justify-content: center;
+}
+
+.main-wrap {
+    display : flex;
+}
