@@ -1,0 +1,6 @@
+.main {
+    position : relative;
+    z-index : 1;
+    background-color : #f1f3f5;
+    color : #212529
+}
