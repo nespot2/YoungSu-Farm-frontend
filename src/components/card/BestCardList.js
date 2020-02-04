@@ -6,49 +6,57 @@ import Card from './Card';
 
 const arr = [
     {
-        imgUrl: "https://s3.ap-northeast-2.amazonaws.com/dev-image.laundrygo.com/banner/aiiw082sy4zfv8j717ckhw5ctst7324tzpo05bpmi88tnfz0hjh0skpi491v8tuvn71zp1qcv341916xriz1fm9zt6rf9qeowl3s.jpg",
+        id : 1,
+        imgUrl: "",
         title: "안녕하슈",
         explain: "죄송합니다.",
         price: 5000
     },
     {
-        imgUrl: "https://s3.ap-northeast-2.amazonaws.com/dev-image.laundrygo.com/banner/aiiw082sy4zfv8j717ckhw5ctst7324tzpo05bpmi88tnfz0hjh0skpi491v8tuvn71zp1qcv341916xriz1fm9zt6rf9qeowl3s.jpg",
+        id : 2,
+        imgUrl: "",
         title: "안녕하슈",
         explain: "죄송합니다.",
         price: 5000
     },
     {
-        imgUrl: "https://s3.ap-northeast-2.amazonaws.com/dev-image.laundrygo.com/banner/aiiw082sy4zfv8j717ckhw5ctst7324tzpo05bpmi88tnfz0hjh0skpi491v8tuvn71zp1qcv341916xriz1fm9zt6rf9qeowl3s.jpg",
+        id : 3,
+        imgUrl: "",
         title: "안녕하슈",
         explain: "죄송합니다.",
         price: 5000
     },
     {
-        imgUrl: "https://s3.ap-northeast-2.amazonaws.com/dev-image.laundrygo.com/banner/aiiw082sy4zfv8j717ckhw5ctst7324tzpo05bpmi88tnfz0hjh0skpi491v8tuvn71zp1qcv341916xriz1fm9zt6rf9qeowl3s.jpg",
+        id : 4,
+        imgUrl: "",
         title: "안녕하슈",
         explain: "죄송합니다.",
         price: 5000
     },
     {
-        imgUrl: "https://s3.ap-northeast-2.amazonaws.com/dev-image.laundrygo.com/banner/aiiw082sy4zfv8j717ckhw5ctst7324tzpo05bpmi88tnfz0hjh0skpi491v8tuvn71zp1qcv341916xriz1fm9zt6rf9qeowl3s.jpg",
+        id : 5,
+        imgUrl: "",
         title: "안녕하슈",
         explain: "죄송합니다.",
         price: 5000
     },
     {
-        imgUrl: "https://s3.ap-northeast-2.amazonaws.com/dev-image.laundrygo.com/banner/aiiw082sy4zfv8j717ckhw5ctst7324tzpo05bpmi88tnfz0hjh0skpi491v8tuvn71zp1qcv341916xriz1fm9zt6rf9qeowl3s.jpg",
+        id : 6,
+        imgUrl: "",
         title: "안녕하슈",
         explain: "죄송합니다.",
         price: 5000
     },
     {
-        imgUrl: "https://s3.ap-northeast-2.amazonaws.com/dev-image.laundrygo.com/banner/aiiw082sy4zfv8j717ckhw5ctst7324tzpo05bpmi88tnfz0hjh0skpi491v8tuvn71zp1qcv341916xriz1fm9zt6rf9qeowl3s.jpg",
+        id : 7,
+        imgUrl: "",
         title: "안녕하슈",
         explain: "죄송합니다.",
         price: 5000
     },
     {
-        imgUrl: "https://s3.ap-northeast-2.amazonaws.com/dev-image.laundrygo.com/banner/aiiw082sy4zfv8j717ckhw5ctst7324tzpo05bpmi88tnfz0hjh0skpi491v8tuvn71zp1qcv341916xriz1fm9zt6rf9qeowl3s.jpg",
+        id : 8,
+        imgUrl: "",
         title: "안녕하슈",
         explain: "죄송합니다.",
         price: 5000
