@@ -1,16 +1,29 @@
 import React from 'react';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 function Header(props) {
     return (
         <header className="header header-box-shadow">
             <div className="header-wrap">
-                <div>버튼목록</div>
-                <div>용수 농장</div>
-                <div>
-                    <input text=""/>
-                    <button>ok</button>
+                <div className="header-item">
+                    <FontAwesomeIcon icon="bars" size="2x"/>
                 </div>
-                <div>로그인정보</div>
+                <div className="header-item">
+                    <span className="header-title">용 수 농 장</span>
+                    <FontAwesomeIcon icon="seedling" color="#3A5F0B"/>
+                </div>
+                <div className="header-item">
+                    <div type="text" className="header-input">
+                        <input type="text"/>
+                        <FontAwesomeIcon icon="search"/>
+                    </div>
+                </div>
+                <div className="header-item">
+                    <ul className="header-ul">
+                        <li><span>로그인</span></li>
+                        <li><FontAwesomeIcon icon="sign-in-alt" size="2x"/></li>
+                    </ul>
+                </div>
             </div>
         </header>
     );
