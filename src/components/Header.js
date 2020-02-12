@@ -20,8 +20,8 @@ function Header(props) {
                 </div>
                 <div className="header-item">
                     <ul className="header-ul">
-                        <li><span>로그인</span></li>
                         <li><FontAwesomeIcon icon="sign-in-alt" size="2x"/></li>
+                        <li><span>로그인</span></li>
                     </ul>
                 </div>
             </div>
