@@ -1,0 +1,35 @@
+.footer {
+    position :relative;
+    z-index : 100;
+    padding : 40px 0px 67px 0px;
+    background-color : #495057;
+    color : #dee2e6;
+}
+
+.footer-wrap {
+    padding : 0 16px;
+}
+
+.footer-list {
+    list-style-type: none;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin : 24px 0;
+}
+
+.footer-list-item {
+    display : inline-block;
+}
+
+.footer-list-item a {
+    color: #dee2e6;
+    text-decoration: none;
+}
+
+.footer-list-item:after {
+    content: '|';
+    margin: 0 16px;
+    color: #868e96;
+    font-weight: normal;
+}

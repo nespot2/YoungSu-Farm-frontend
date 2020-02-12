@@ -1,0 +1,12 @@
+@import 'header.css';
+@import 'card.css';
+@import 'footer.css';
+
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    position : relative;
+}
