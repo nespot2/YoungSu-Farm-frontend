@@ -5,19 +5,35 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+    />
 </head>
 <body>
 <header class="header header-box-shadow">
     <div class="header-wrap">
-        <div class="header-item">버튼목록</div>
-        <div class="header-item">용수 농장</div>
+        <div class="header-item">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <div className="header-item">
+            <span class="header-title">용 수 농 장</span>
+            <i class="fas fa-seedling" style="color : #3A5F0B"></i>
+        </div>
         <div class="header-item">
             <div type="text" class="header-input">
-                <input text="" />
-                <button>ok</button>
+                <input type="text"/>
+                <i class="fas fa-search"></i>
             </div>
         </div>
-        <div class="header-item">로그인</div>
+        <div class="header-item">
+            <ul class="header-ul">
+                <li><i class="fas fa-sign-in-alt fa-2x"></i></li>
+                <li><span>로그인</span></li>
+            </ul>
+        </div>
     </div>
 </header>
 <main class="main">
