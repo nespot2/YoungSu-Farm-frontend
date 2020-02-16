@@ -1,58 +1,60 @@
+import {FETCH_BEST_CARD_TYPE} from "./type";
+
 export default () => {
     return {
-        type : 'FETCH_BEST_CARD',
-        payload : [
+        type: FETCH_BEST_CARD_TYPE,
+        payload: [
             {
-                id : 1,
+                id: 1,
                 imgUrl: "",
                 title: "안녕하슈",
                 explain: "죄송합니다.",
                 price: 5000
             },
             {
-                id : 2,
+                id: 2,
                 imgUrl: "",
                 title: "안녕하슈",
                 explain: "죄송합니다.",
                 price: 5000
             },
             {
-                id : 3,
+                id: 3,
                 imgUrl: "",
                 title: "안녕하슈",
                 explain: "죄송합니다.",
                 price: 5000
             },
             {
-                id : 4,
+                id: 4,
                 imgUrl: "",
                 title: "안녕하슈",
                 explain: "죄송합니다.",
                 price: 5000
             },
             {
-                id : 5,
+                id: 5,
                 imgUrl: "",
                 title: "안녕하슈",
                 explain: "죄송합니다.",
                 price: 5000
             },
             {
-                id : 6,
+                id: 6,
                 imgUrl: "",
                 title: "안녕하슈",
                 explain: "죄송합니다.",
                 price: 5000
             },
             {
-                id : 7,
+                id: 7,
                 imgUrl: "",
                 title: "안녕하슈",
                 explain: "죄송합니다.",
                 price: 5000
             },
             {
-                id : 8,
+                id: 8,
                 imgUrl: "",
                 title: "안녕하슈",
                 explain: "죄송합니다.",

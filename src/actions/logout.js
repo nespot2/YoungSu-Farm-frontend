@@ -1,6 +1,11 @@
-export default () => {
+import {SIGN_OUT_TYPE} from "./type";
+
+export default (userInfo) => {
     return {
-        isSignIn: false,
-        userInfo: null
+        type: SIGN_OUT_TYPE,
+        payload: {
+            isSignIn: true,
+            userInfo
+        }
     }
 }
