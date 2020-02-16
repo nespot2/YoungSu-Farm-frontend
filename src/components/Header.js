@@ -1,5 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import LoginOrLogout from "./login/LoginOrLogout";
 
 function Header(props) {
     return (
@@ -19,10 +20,7 @@ function Header(props) {
                     </div>
                 </div>
                 <div className="header-item">
-                    <ul className="header-ul">
-                        <li><FontAwesomeIcon icon="sign-in-alt" size="2x"/></li>
-                        <li><span>로그인</span></li>
-                    </ul>
+                    <LoginOrLogout/>
                 </div>
             </div>
         </header>
