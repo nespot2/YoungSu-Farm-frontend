@@ -16,9 +16,7 @@ function login() {
 }
 
 function logout() {
-
     return el("sign-out-alt", "로그아웃")
-
 }
 
 function el(icon, message) {

@@ -9,7 +9,7 @@ const init = {
 export default (state = init, action) => {
     switch (action.type) {
         case SIGN_IN_TYPE :
-            return {...state, isSignIn: action.payload.isSignIn, userInfo: action.payload};
+            return {...state, isSignIn: action.payload.isSignIn, userInfo: action.payload.userInfo};
         case SIGN_OUT_TYPE :
             return {...state, isSignIn: action.payload.isSignIn}
         default :
