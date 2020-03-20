@@ -1,65 +1,36 @@
 import {FETCH_BEST_CARD_TYPE} from "./type";
+import axios from 'axios';
+import {go, map, baseSel, head} from 'fxjs';
 
-export default () => {
+
+export default () => async (dispath) => {
+
+    const data = await go(
+        axios.get("/v1/product/recommend"),
+        response => response.data.d,
+        map(mapDataToProps)
+    );
+
+    dispath({type: FETCH_BEST_CARD_TYPE, payload: data});
+}
+
+function mapDataToProps(data) {
+
+    let sel = baseSel(".");
+
+    const imgUrl = head(data.productImageDtoList || []);
+
+    const productId = sel('productDto.productId', data);
+    const productName = sel('productDto.productName', data);
+    const price = sel('productDto.price', data);
+
+
     return {
-        type: FETCH_BEST_CARD_TYPE,
-        payload: [
-            {
-                id: 1,
-                imgUrl: "",
-                title: "안녕하슈",
-                explain: "죄송합니다.",
-                price: 5000
-            },
-            {
-                id: 2,
-                imgUrl: "",
-                title: "안녕하슈",
-                explain: "죄송합니다.",
-                price: 5000
-            },
-            {
-                id: 3,
-                imgUrl: "",
-                title: "안녕하슈",
-                explain: "죄송합니다.",
-                price: 5000
-            },
-            {
-                id: 4,
-                imgUrl: "",
-                title: "안녕하슈",
-                explain: "죄송합니다.",
-                price: 5000
-            },
-            {
-                id: 5,
-                imgUrl: "",
-                title: "안녕하슈",
-                explain: "죄송합니다.",
-                price: 5000
-            },
-            {
-                id: 6,
-                imgUrl: "",
-                title: "안녕하슈",
-                explain: "죄송합니다.",
-                price: 5000
-            },
-            {
-                id: 7,
-                imgUrl: "",
-                title: "안녕하슈",
-                explain: "죄송합니다.",
-                price: 5000
-            },
-            {
-                id: 8,
-                imgUrl: "",
-                title: "안녕하슈",
-                explain: "죄송합니다.",
-                price: 5000
-            }
-        ]
+        id: productId,
+        imgUrl: imgUrl,
+        title: productName,
+        explain: productName,
+        price: price
     }
+
 }
