@@ -12,7 +12,9 @@ RUN npm run build
 
 FROM nginx
 
-COPY --fro /app/build /usr/share/nginx/html
+COPY --from=builder /app/build /usr/share/nginx/html
+
+COPY --from=builder /app/nginx.conf /etc/nginx/
 
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 
